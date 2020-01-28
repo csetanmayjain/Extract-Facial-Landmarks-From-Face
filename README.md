@@ -1,6 +1,7 @@
 # Extract Landmarks From Face
 
  Detect Facial landmarks in a face.
+ 
 Facial landmarks are used to localize and represent salient regions of the face, such as:
 1. Mouth
 2. Eyebrow
@@ -80,10 +81,10 @@ Curve
 # Details Regarding Content of Folders and Files
 
 1. Extracted Features :- Contains the extracted landmarks from face in numpy.
-2. Screenshots :- Contains the scrrenshots of output images
+2. Screenshots :- Contains the screenshots of output images
 3. images :- Contains the sample input image and example of facial landmark features in an image
-4. detect_face_parts.py :- Source program in python
-5. shape_predictor_68_face_landmarks.dat :- Model in dlib for extracting 
+4. detect_face_parts.py :- Source program in Python
+5. shape_predictor_68_face_landmarks.dat :- Model for extracting landmark
 6. helpers.py :- Replace it with your current helpers.py present in "imutils/face_utils/helpers.py". 
 
 # Troubleshoot
@@ -92,7 +93,6 @@ Quite possible, after you will run it, you will face following error
 "imutils/face_utils/helpers.py", line 83, in visualize_facial_landmarks color[i] index out or range"
 
 Solution
-FACIAL_LANDMARKS_68_IDXS provides 8 landmarks.
-"Only seven colors are present in imutils, helper file(imutils/face_utils/helpers.py) in line 65 which leads to index out of range.
+FACIAL_LANDMARKS_68_IDXS provides 8 landmarks but only seven colors are present in imutils, helper file(imutils/face_utils/helpers.py) in line 65 which leads to index out of range.
 To resolve this add one more color to it or you can replace your existing helper file, with the file present in this repository.
 
