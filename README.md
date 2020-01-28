@@ -41,7 +41,7 @@ Example
 python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
 
 # Input
-![](images/picture.jpg)
+![](images/picture.jpg=500x500)
 Input Image
 
 # Output
@@ -68,8 +68,11 @@ Inner Mouth
 ![](Screenshots/inner_mouth.png)
 
 Curve
+
 ![](Screenshots/curve.png)
 
 
 Store in thelandmarks in a numpy array format.
+folder details
+
 # Troubleshoot
