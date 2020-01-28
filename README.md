@@ -45,31 +45,31 @@ python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.
 Input Image
 
 # Output
-Output Image
 
-![](Screenshots/left_eye.png)
 Left Eye
+![](Screenshots/left_eye.png)
 
-![](Screenshots/right_eye.png)
 Right Eye
+![](Screenshots/right_eye.png)
 
-![](Screenshots/left_eyebrow.png)
 Left Eyebrow
+![](Screenshots/left_eyebrow.png)
 
-![](Screenshots/right_eyebrow.png)
 Right Eyebrow
+![](Screenshots/right_eyebrow.png)
 
+Node
 ![](Screenshots/nose.png)
-Nose
 
-![](Screenshots/mouth.png)
 Mouth
+![](Screenshots/mouth.png)
 
-![](Screenshots/inner_mouth.png)
 Inner Mouth
+![](Screenshots/inner_mouth.png)
 
-![](Screenshots/curve.png)
 Curve
+![](Screenshots/curve.png)
+
 
 Store in thelandmarks in a numpy array format.
 # Troubleshoot
