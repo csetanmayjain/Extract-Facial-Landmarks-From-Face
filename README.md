@@ -20,8 +20,7 @@ In this program we try to detect the following facial landmarks using dlib, Open
 # Understanding dlib’s facial landmark detector
 The pre-trainedfacial landmark detector inside the dlib library is used to estimate the location of 68 (x, y)-coordinates that map to facial structures on the face.The indexes of the 68 coordinates can be visualized on the image below:
 
-![These annotations are part of the 68 points iBUG 300-W dataset which the dlib faciallandmark predictor was trained on.](https://www.pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg)
-
+![These annotations are part of the 68 points iBUG 300-W dataset which the dlib faciallandmark predictor was trained on.](images/facial_landmarks_68markup.jpg)
 
 
 
@@ -41,27 +40,36 @@ python program_namepath_of_trained_model source_image_path
 Example
 python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
 
-Sample Image
-
+# Input
 ![](images/picture.jpg)
-Sample Input Image
+Input Image
 
+# Output
 Output Image
 
 ![](Screenshots/left_eye.png)
+Left Eye
 
 ![](Screenshots/right_eye.png)
+Right Eye
 
 ![](Screenshots/left_eyebrow.png)
+Left Eyebrow
 
 ![](Screenshots/right_eyebrow.png)
+Right Eyebrow
 
 ![](Screenshots/nose.png)
+Nose
 
 ![](Screenshots/mouth.png)
+Mouth
 
 ![](Screenshots/inner_mouth.png)
+Inner Mouth
 
 ![](Screenshots/curve.png)
+Curve
 
 Store in thelandmarks in a numpy array format.
+# Troubleshoot
