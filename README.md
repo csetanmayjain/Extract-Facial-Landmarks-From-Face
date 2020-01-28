@@ -1,4 +1,4 @@
-# Identify-the-landmarks-on-image-
+# Extract Landmarks From Face
 
  Detect Facial landmarks in a face.
 Facial landmarks are used to localize and represent salient regions of the face, such as:
@@ -8,7 +8,7 @@ Facial landmarks are used to localize and represent salient regions of the face,
 4. Nose
 5. Jaw
 
-In this program we try to detect the following facial landmarks using dlib, OpenCV,Python and then print and store those landmarks in a file.
+In this program we try to detect the following facial landmarks using dlib, OpenCV, Python and then print and store those landmarks in a file.
 1. Mouth
 2. Inner Mouth
 3. Right Eyebrow
@@ -19,10 +19,10 @@ In this program we try to detect the following facial landmarks using dlib, Open
 8. Jaw
 
 # Understanding dlib’s facial landmark detector
-The pre-trainedfacial landmark detector inside the dlib library is used to estimate the location of 68 (x, y)-coordinates that map to facial structures on the face.The indexes of the 68 coordinates can be visualized on the image below:
+The pre-trained facial landmark detector inside the dlib library is used to estimate the location of 68 (x, y)-coordinates that map to facial structures on the face.
 
-![These annotations are part of the 68 points iBUG 300-W dataset which the dlib faciallandmark predictor was trained on.](images/facial_landmarks_68markup.jpg)
-
+These annotations are part of the 68 points iBUG 300-W dataset which the dlib facial landmark predictor was trained on.
+![](images/facial_landmarks_68markup.jpg)
 
 
 # Installation
@@ -33,17 +33,21 @@ Packages Required
 4. cv2
 
 # How to run
-Python program and Dlib should be in the same directory or give the path manually
+Python program and dlib should be in the same directory or give the path manually
 
 Argument
+
 python program_namepath_of_trained_model source_image_path
 
 Example
+
 python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
 
 # Input
-![](images/picture.jpg)
+
 Input Image
+![](images/picture.jpg)
+
 
 # Output
 
@@ -74,6 +78,7 @@ Curve
 
 
 # Details Regarding Content of Folders and Files
+
 1. Extracted Features :- Contains the extracted landmarks from face in numpy.
 2. Screenshots :- Contains the scrrenshots of output images
 3. images :- Contains the sample input image and example of facial landmark features in an image
