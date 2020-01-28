@@ -10,12 +10,13 @@ Facial landmarks are used to localize and represent salient regions of the face,
 
 In this program we try to detect the following facial landmarks using dlib, OpenCV,Python and then print and store those landmarks in a file.
 1. Mouth
-2. Right Eyebrow
-3. Left Eyebrow
-4. Right Eye
-5. Left Eye
-6. Nose
-7. Jaw
+2. Inner Mouth
+3. Right Eyebrow
+4. Left Eyebrow
+5. Right Eye
+6. Left Eye
+7. Nose
+8. Jaw
 
 # Understanding dlib’s facial landmark detector
 The pre-trainedfacial landmark detector inside the dlib library is used to estimate the location of 68 (x, y)-coordinates that map to facial structures on the face.The indexes of the 68 coordinates can be visualized on the image below:
@@ -41,7 +42,7 @@ Example
 python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
 
 # Input
-![](images/picture.jpg=500x500)
+![](images/picture.jpg)
 Input Image
 
 # Output
@@ -72,7 +73,21 @@ Curve
 ![](Screenshots/curve.png)
 
 
-Store in thelandmarks in a numpy array format.
-folder details
+# Details Regarding Content of Folders and Files
+1. Extracted Features :- Contains the extracted landmarks from face in numpy.
+2. Screenshots :- Contains the scrrenshots of output images
+3. images :- Contains the sample input image and example of facial landmark features in an image
+4. detect_face_parts.py :- Source program in python
+5. shape_predictor_68_face_landmarks.dat :- Model in dlib for extracting 
+6. helpers.py :- Replace it with your current helpers.py present in "imutils/face_utils/helpers.py". 
 
 # Troubleshoot
+
+Quite possible, after you will run it, you will face following error
+"imutils/face_utils/helpers.py", line 83, in visualize_facial_landmarks color[i] index out or range"
+
+Solution
+FACIAL_LANDMARKS_68_IDXS provides 8 landmarks.
+"Only seven colors are present in imutils, helper file(imutils/face_utils/helpers.py) in line 65 which leads to index out of range.
+To resolve this add one more color to it or you can replace your existing helper file, with the file present in this repository.
+
