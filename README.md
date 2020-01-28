@@ -42,16 +42,26 @@ Example
 python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
 
 Sample Image
-![Input Image](https://drive.google.com/open?id=1kljGtswRCe9_xovieiTMZD3nrJO07nUd)
+
+![](images/picture.jpg)
+Sample Input Image
 
 Output Image
-![Left Eye](https://drive.google.com/open?id=1DWcbYh15Pyoc--4slX3r7J04S3FkLSW6)
-![Right Eye](https://drive.google.com/open?id=1TG5ldwXg66JRKgiVkeM2ZWcI-O1o0at6)
-![Left Eyebrow](https://drive.google.com/open?id=1C9RyT4R4nfA2rFujQrEL8RYJNVID_coc)
-![Right Eyebrow](https://drive.google.com/open?id=1_8oglAUvqqQIC7LJ69NHgiwRaaLwhujl)
-![Nose](https://drive.google.com/open?id=1g6mLy-76mfwaTqO0FQcp1kYt9yqISGUh)
-![Mouth](https://drive.google.com/open?id=1OjdpGfTeRSFDnSFODFUor6Z9S7eTpEhl)
-![Inner Mouth](https://drive.google.com/open?id=1c_JnXDAp0vB2IsSrf9HdonwOCEPBmHwY)
-![Curve](https://drive.google.com/file/d/1X3xgJCHQNAA-MsgbNd3Not8XLUOxTjmH/view)
+
+![](Screenshots/left_eye.png)
+
+![](Screenshots/right_eye.png)
+
+![](Screenshots/left_eyebrow.png)
+
+![](Screenshots/right_eyebrow.png)
+
+![](Screenshots/nose.png)
+
+![](Screenshots/mouth.png)
+
+![](Screenshots/inner_mouth.png)
+
+![](Screenshots/curve.png)
 
 Store in thelandmarks in a numpy array format.
