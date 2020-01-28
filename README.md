@@ -20,10 +20,10 @@ In this program we try to detect the following facial landmarks using dlib, Open
 # Understanding dlib’s facial landmark detector
 The pre-trainedfacial landmark detector inside the dlib library is used to estimate the location of 68 (x, y)-coordinates that map to facial structures on the face.The indexes of the 68 coordinates can be visualized on the image below:
 
-![alt text](https://www.pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg)
+![These annotations are part of the 68 points iBUG 300-W dataset which the dlib faciallandmark predictor was trained on.](https://www.pyimagesearch.com/wp-content/uploads/2017/04/facial_landmarks_68markup.jpg)
 
 
-These annotations are part of the 68 points iBUG 300-W dataset which the dlib faciallandmark predictor was trained on.
+
 
 # Installation
 Packages Required
@@ -35,11 +35,23 @@ Packages Required
 # How to run
 Python program and Dlib should be in the same directory or give the path manually
 
-# argument
+Argument
 python program_namepath_of_trained_model source_image_path
 
-# Example
+Example
 python detect_face_parts.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
-Output
+
+Sample Image
+![Input Image](https://drive.google.com/open?id=1kljGtswRCe9_xovieiTMZD3nrJO07nUd)
+
+Output Image
+![Left Eye](https://drive.google.com/open?id=1DWcbYh15Pyoc--4slX3r7J04S3FkLSW6)
+![Right Eye](https://drive.google.com/open?id=1TG5ldwXg66JRKgiVkeM2ZWcI-O1o0at6)
+![Left Eyebrow](https://drive.google.com/open?id=1C9RyT4R4nfA2rFujQrEL8RYJNVID_coc)
+![Right Eyebrow](https://drive.google.com/open?id=1_8oglAUvqqQIC7LJ69NHgiwRaaLwhujl)
+![Nose](https://drive.google.com/open?id=1g6mLy-76mfwaTqO0FQcp1kYt9yqISGUh)
+![Mouth](https://drive.google.com/open?id=1OjdpGfTeRSFDnSFODFUor6Z9S7eTpEhl)
+![Inner Mouth](https://drive.google.com/open?id=1c_JnXDAp0vB2IsSrf9HdonwOCEPBmHwY)
+![Curve](https://drive.google.com/file/d/1X3xgJCHQNAA-MsgbNd3Not8XLUOxTjmH/view)
 
 Store in thelandmarks in a numpy array format.
